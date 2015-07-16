@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+
+html h1 {
+  color: #b58900;
+}
+</style>
+<div id="header"><center>
+    <p class="header_titleline">
+    <a href="index.html" target="_self" title="主页">主页  </a><a href="Search.html" target="_self" title="站内搜索">站内搜索  </a><a href="Projects.html" target="_self" title="项目研究">项目研究  </a><a href="Archives.html" target="_self" title="文章存档">文章存档  </a><a href="README.html" target="_self" title="分类目录">分类目录 </a><a href="AboutMe.html" target="_self" title="关于我">关于我  </a>
+    </p>
+</center></div>
+
+<div id="footer"><center>
+    <p class="footer_subline">联系邮箱: scgaluo@qq.com</p>
+    <p class="footer_subline">声明: 本站所有文章如非特别说明均为原创，转载请注明出处！
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253219218'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253219218%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </p>
+</center></div>
+
+<!-- 回到顶部 -->
+<script>
+lastScrollY=0;
+function heartBeat(){
+var diffY;
+if (document.documentElement && document.documentElement.scrollTop)
+    diffY = document.documentElement.scrollTop;
+else if (document.body)
+    diffY = document.body.scrollTop
+else
+    {/*Netscape stuff*/}
+percent=.1*(diffY-lastScrollY);
+if(percent>0)percent=Math.ceil(percent);
+else percent=Math.floor(percent);
+document.getElementById("full").style.top=parseInt(document.getElementById("full").style.top)+percent+"px";
+lastScrollY=lastScrollY+percent;
+}
+suspendcode="<div id=\"full\" style='right:1px;POSITION:absolute;TOP:600px;z-index:100'><a onclick='window.scrollTo(0,0);'><img src='./images/top.png'></a><br></div>"
+document.write(suspendcode);
+window.setInterval("heartBeat()",1);
+</script>
+
+</head>
+<body>
+<hr />
+<h1><center>罗小凤的简历</center></h1>
+<h4><center>欲穷千里目，更上一层楼</center></h4>
+<hr />
+<h1>联系方式</h1>
+<ul>
+<li>手机：15806520612（青岛）</li>
+<li>Email：527374998@qq.com </li>
+<li>微信号：scgaluo</li>
+</ul>
+<hr />
+<h1>个人信息</h1>
+<ul>
+<li>罗小凤/男/1992 </li>
+<li>本科/西南科技大学信息工程学院 </li>
+<li>工作年限：1年</li>
+<li>微博：<a href="http://weibo.com/u/3018076222">@scgaluo</a> </li>
+<li>技术博客：<a href="http://www.cnblogs.com/galuo/">http://www.cnblogs.com/galuo/</a></li>
+<li>Github: <a href="https://github.com/galuo">https://github.com/galuo</a></li>
+<li>期望职位：嵌入式产品研发工程师</li>
+<li>期望城市：成都
+<center> <img src="Image/DSC_3164.JPG" width = "160" height = "230" align=center />
+</center></li>
+</ul>
+<hr />
+<h1>工作经历</h1>
+<h2>青岛佳明测控科技股份有限公司 （ 2014年7月 ~ 至今 ）</h2>
+<h3>微生物四项检测仪</h3>
+<p>我在这个项目中主要负责硬件接口的Linux驱动编写以及QT程序的编写,在接触
+新知识linux驱动编写方面,我快速的找到该项目要用到的技术,并改写调试符合
+项目需求。这个项目中,对该仪器检测流程代码的编写最困难,对此我想出两种
+检测流程方案,完善它们并把它们做出对比,根据较优秀的方案编写代码。</p>
+<h3>大肠菌群在线检测仪</h3>
+<p>这个项目中,我主要负责组装调试以及维护工作。在对仪器的调试过程中,遇到
+很多问题使我对仪器的结构变得很熟悉,让我认识到仪器的设计优点和一些不
+足,并且针对不足提出改进方案。到仪器使用现场对检测仪进行维护工作,认识
+仪器的工作环境要求,与用户进行交流,获取用户意见和建议。</p>
+<h2>绵阳睿控科技股份有限公司(2014年3月~4月)</h2>
+<h3>实习经历</h3>
+<p>在实习的过程中,因为有扎实的C++基础,使我快速的入门学习使用C#,并编写
+了一套高速数据采集设备的上位机程序。</p>
+<h1>技能清单</h1>
+<p>以下均为我熟练使用的技能</p>
+<ul>
+<li>Windows开发:MFC/C#/MSSQL</li>
+<li>Linux开发:设备驱动程序/QT应用程序</li>
+<li>ARM嵌入式芯片:ARM7(LPC2292)/Cortex-M3(LPC1768/STM32)/A8(s5pv210)</li>
+<li>PCB绘制及作图工具:Protel/Altium Designer/AutoCAD</li>
+<li>版本管理及文档工具:Git/Markdown/MS Office</li>
+</ul>
+<h1>开源项目和作品</h1>
+<h2>开源项目</h2>
+<ul>
+<li><a href="https://github.com/galuo/hello_github">hello_github</a>:对linux驱动的学习调试的成果。</li>
+<li><a href="https://github.com/galuo/LPC1768-GPS">LPC1768-GPS</a>:毕业设计的源代码以及硬件设计图。</li>
+</ul>
+<h2>技术文章</h2>
+<ul>
+<li><a href="http://www.cnblogs.com/galuo/p/3419775.html">在MFC对话框中使用Google地图(续)</a></li>
+<li><a href="http://www.cnblogs.com/galuo/p/3612361.html">GPRS模块调试,新花生壳+学校内网</a></li>
+<li><a href="http://www.cnblogs.com/galuo/p/4058791.html">搜索总结c++ 内存泄露问题</a></li>
+</ul>
+<h1>演讲和讲义</h1>
+<ul>
+<li>毕业设计答辩:<a href="http://pan.baidu.com/s/1i3tHUtB">基于LPC1768和GPS的定位系统设计</a></li>
+<li>例会汇报:<a href="http://pan.baidu.com/s/1mgomj8W">uCGUI简介</a></li>
+</ul>
+<h1>致谢</h1>
+<p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
