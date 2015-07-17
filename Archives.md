@@ -1,5 +1,7 @@
 #2015
 
+- 2015/7/17 [使用QCustomPlot画实时曲线](article/使用QCustomPlot画实时曲线.html)
+
 #2014
 - 2014-03-19 [GPRS模块调试，新花生壳+学校内网](article/GPRS模块调试，新花生壳+学校内网.html)
 
