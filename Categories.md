@@ -13,7 +13,7 @@
 
 
 
-[羁绊与自由](article/羁绊与自由.html)
+
 
 [初入博客园](article/初入博客园.html)
 

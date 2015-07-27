@@ -15,7 +15,6 @@
 
 
 - 2015/7/23 [基于MarkdownPad2和Github的个人网站建设管理](article/基于MarkdownPad2和Github的个人网站建设管理.html)
-- 2015/7/20 [羁绊与自由](article/羁绊与自由.html)
 - 2015/7/17 [使用QCustomPlot画实时曲线](article/使用QCustomPlot画实时曲线.html)
 
 #2014
