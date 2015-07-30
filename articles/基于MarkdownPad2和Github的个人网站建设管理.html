@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基于MarkdownPad2和Github的个人网站建设管理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+</style>
+<link rel="stylesheet" href="../stylesheets/markdownpad-github.css" type="text/css" />
+<div id="header"><center>
+    <p class="header_titleline">
+    <a href="../index.html" target="_self" title="主页">主页  </a>&middot;
+    <a href="../Projects.html" target="_self" title="项目研究">项目研究  </a>&middot;
+    <a href="../Archives.html" target="_self" title="博客文章">博客文章  </a>&middot;
+    <a href="../Categories.html" target="_self" title="分类目录">分类目录 </a>&middot;
+    <a href="../About_Me.html" target="_self" title="关于我">关于我  </a>
+    </p>
+</center></div>
+<div id="footer"><center>
+    <p class="footer_subline">联系邮箱: scgaluo@qq.com</p>
+    <p class="footer_subline">声明: 本站所有文章如非特别说明均为原创，转载请注明出处！
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255791187'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255791187%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</center></div>
+<hr />
+
+</head>
+<body>
+<h1><center>基于MarkdownPad2和Github的个人网站建设管理</center></h1>
+<blockquote>
+<p><strong>摘要：</strong>也许这不是最好的管理个人博客的方法，但是它是我能够轻松掌握的方法。通过Git作为项目的版本管理方式，实现本地化的网站项目管理；使用Markdown写文档，轻松快速。</p>
+<p><strong>关键词：</strong>Markdown、Git、个人网页</p>
+</blockquote>
+<h2>一、概述</h2>
+<p>　　个人博客作为记载内容、介绍个人心中所想的一个载体，它不仅能够记录自己的点点滴滴，而且是共享与分享精神的一种体现。可以通过个人博客展示自己某些方面的能力，达到一个交流学习的作用，还可以通过网络认识到一些朋友。现阶段个人博客、个人主页的发展非常多元化，可以在某些网站上注册账号来作为个人的博客系统，也可以自己搭建一个网站来实现个人主页的管理。本文主要是介绍使用MarkdownPad2和Github实现个人博客的创建、编写和管理的方法。</p>
+<h3>1.1 Markdown和MarkdownPad2介绍</h3>
+<p>　　作为写作和排版的一个工具，Markdown是一种神奇的标记语言，寄托于兼容性极强的纯文本却又兼顾了排版和样式，让你专注于文字而不是排版。同时Markdown的文本也可以轻松转换为html，极有利于实现个人博客网页的建设。MarkdownPad2是一款在Windows系统下面的Markdown编辑器，其左右栏的分割方式令用户可以实时看到HTML格式的Markdown文档。
+<center><img src="../Images/Markdownpda2.png" /></center></p>
+<h3>1.2 Git和Github介绍</h3>
+<p>　　Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。Git是Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。本文在Windows下使用Git，其有一个Git GUI工具，可以实现窗口可视化的操作，但是用户的操作实际上都是通过命令的方式实现，所以学习掌握Git最好是通过命令来管理项目文档。GitHub可以托管各种git库，并提供一个web界面，GitHub的独特卖点在于从另外一个项目进行分支的简易性。在GitHub，用户可以十分轻易地找到海量的开源代码。
+<center><img src="../Images/gitgui.png" /></center></p>
+<h2>二、网页框架设计</h2>
+<p>　　网页的设计构架主要实现对样式表的个人爱好设置和网页<code>&lt;head&gt;</code>标签的设计。根据“<a href="http://baike.baidu.com/link?url=XmNDXORPosZnZdJj8TtJTVMZSm0i0TTKiPJ-nlo0mK0VxoF2YqV647Uw637bvsNZhafThfOkfX3T7xctS6uk1q">奥卡姆剃刀定律</a>”，即“简单有效原理”，本文尊重简单即是美设计理念。设计一个美观、简洁、大方的网页头，用于所有的网页，并在所有的网页当中使用同一种样式表。</p>
+<p>　　在MarkdownPad2中点击<code>工具</code>-&gt;<code>选项</code>-&gt;<code>样式表</code>，选择<code>none.css</code>，点击<code>高级</code>-&gt;<code>HTML Head编辑器</code>，输入以下内容：</p>
+<blockquote>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheets/markdownpad-github.css&quot; type=&quot;text/css&quot; /&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;center&gt;
+&lt;p class=&quot;header_titleline&quot;&gt;
+&lt;a href=&quot;index.html&quot; target=&quot;_self&quot; title=&quot;主页&quot;&gt;主页  &lt;/a&gt;&amp;middot;
+&lt;a href=&quot;Projects.html&quot; target=&quot;_self&quot; title=&quot;项目研究&quot;&gt;项目研究  &lt;/a&gt;&amp;middot;
+&lt;a href=&quot;Archives.html&quot; target=&quot;_self&quot; title=&quot;博客文章&quot;&gt;博客文章  &lt;/a&gt;&amp;middot;
+&lt;a href=&quot;Categories.html&quot; target=&quot;_self&quot; title=&quot;分类目录&quot;&gt;分类目录 &lt;/a&gt;&amp;middot;
+&lt;a href=&quot;About_Me.html&quot; target=&quot;_self&quot; title=&quot;关于我&quot;&gt;关于我  &lt;/a&gt;
+&lt;/p&gt;
+&lt;/center&gt;&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;&lt;center&gt;
+&lt;p class=&quot;footer_subline&quot;&gt;联系邮箱: scgaluo@qq.com&lt;/p&gt;
+&lt;p class=&quot;footer_subline&quot;&gt;声明: 本站所有文章如非特别说明均为原创，转载请注明出处！
+&lt;script type=&quot;text/javascript&quot;&gt;var cnzz_protocol = ((&quot;https:&quot; == document.location.protocol) ? &quot; https://&quot; : &quot; http://&quot;);document.write(unescape(&quot;%3Cspan id='cnzz_stat_icon_1255791187'%3E%3C/span%3E%3Cscript src='&quot; + cnzz_protocol + &quot;s95.cnzz.com/z_stat.php%3Fid%3D1255791187%26show%3Dpic' type='text/javascript'%3E%3C/script%3E&quot;));&lt;/script&gt;
+&lt;/center&gt;&lt;/div&gt;
+&lt;hr /&gt;
+</code></pre>
+
+</blockquote>
+<p>　　这样子就设计好了一个很简单、简洁的网页头部，也可以说是一个框架。对每个Markdown文件导出成为HTML文档，网页就有了一个总体的样式。</p>
+<p>　　Github上面对个人主页的管理新建一个以<code>用户名.github.io</code>为命名的仓库，比如说我的主页管理的仓库名为<code>galuo.github.io</code>，然后在设置当中建立<code>GitHub Pages</code>。</p>
+<h2>三、总结</h2>
+<p>　　通过使用MarkdownPad2和Github对个人主页的建设，明白了网站建设的一些基本的事情。我觉得这种本地管理博客或者个人主页的方式非常方便，能做到打开电脑就可以创建新文章，可以对以前的文章进行更改，生成HTML网页也非常的方便。而对网站的更新只需要几个Git命令就可以快速的实现。我很喜欢这种简单的方式。当然本文写作的方式有是按照论文的结构来表述，有一些格式化，但这种方式有一个很清晰的思路。</p>
+<h2>参考文档</h2>
+<p>[1] <a href="http://baike.baidu.com/link?url=6eN4lPX4hZ9-s2a0LSpldJ18xgZhQOSx2rMdujC0uI8txEXysQUchjXbyXhgexNW43CncQZq7H5ihgsBXFe5U_">Markdown--百度百科</a></p>
+<p>[2] <a href="http://baike.baidu.com/link?url=q-cxVFSwnW1aXmYsdL8N3tk2IMTRnUL9yQrUhiTs-iltiOcaPK4GrxXk0C7_Tw_i1sxJ0T3NnDTzGEa9O6QnyRPwUCQQF2OsTJnTbaMMXKy">Git--百度百科</a></p>
+<p>[3] <a href="http://baike.baidu.com/link?url=o8a9JU4dZs8QzJw1HKebLNQ_m2vOptBeahnzx_IIGxr2MkLeXGfdvA75WFty_atTLGeR5_dRrPVW2TdYYoWobq">Github--百度百科</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

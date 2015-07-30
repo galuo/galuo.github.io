@@ -19,6 +19,6 @@ GTM900C 模块的 GPRS 无线传输功能传输信息，以 LPC1768 作为核心
 
 　　本地工作管理的环境是Windows7+MarkdownPad2+git。MarkdownPad2实现HTML文件的生成，git实现对项目版本的整体控制。也许这不是最好的管理个人博客的方法，但是它是我能够轻松掌握的方法。通过Git作为项目的版本管理方式，实现本地化的网站项目管理；使用Markdown写文档，轻松快速。
 
-- [基于MarkdownPad2和Github的个人网站建设管理](article/基于MarkdownPad2和Github的个人网站建设管理.html)：网站项目所写文档。
+- [基于MarkdownPad2和Github的个人网站建设管理](articles/基于MarkdownPad2和Github的个人网站建设管理.html)：网站项目所写文档。
 
 

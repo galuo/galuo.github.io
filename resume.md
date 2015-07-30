@@ -21,7 +21,7 @@
  - Github: [https://github.com/galuo](https://github.com/galuo)
  - 期望职位：嵌入式产品研发工程师
  - 期望城市：成都
-<center> <img src="Image/DSC_3164.JPG" width = "160" height = "230" align=center />
+<center> <img src="Images/DSC_3164.JPG" width = "160" height = "230" align=center />
 </center>
 
 

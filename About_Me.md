@@ -8,6 +8,6 @@
 
 
 #联系方式（欢迎交流学习）
-![](Image/qq.jpg)
-![](Image/weixin.jpg)
+![](Images/qq.jpg)
+![](Images/weixin.jpg)
 
