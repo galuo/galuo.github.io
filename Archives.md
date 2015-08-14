@@ -12,7 +12,7 @@
 
 
 
-
+- 2015/8/14 [《白桦林》歌曲赏析](articles/白桦林.html)
 
 - 2015/7/23 [基于MarkdownPad2和Github的个人网站建设管理](articles/基于MarkdownPad2和Github的个人网站建设管理.html)
 - 2015/7/17 [使用QCustomPlot画实时曲线](articles/使用QCustomPlot画实时曲线.html)
