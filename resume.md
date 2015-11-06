@@ -1,7 +1,7 @@
 
 
 #<center>罗小凤的简历</center>#
-####<center>欲穷千里目，更上一层楼</center>####
+####<center>团队和协作，奉献与竞争</center>####
 
 ---
 # 联系方式
@@ -14,15 +14,14 @@
 # 个人信息
 
  - 罗小凤/男/1992 
- - 本科/西南科技大学信息工程学院 
+ - 本科/西南科技大学/电气工程及其自动化 
  - 工作年限：1年
  - 微博：[@scgaluo](http://weibo.com/u/3018076222) 
  - 技术博客：[http://www.cnblogs.com/galuo/](http://www.cnblogs.com/galuo/)
  - Github: [https://github.com/galuo](https://github.com/galuo)
- - 期望职位：嵌入式产品研发工程师
+ - 期望职位：嵌入式软件工程师
  - 期望城市：成都
-<center> <img src="Images/DSC_3164.JPG" width = "160" height = "230" align=center />
-</center>
+
 
 
 ---
@@ -53,7 +52,7 @@
 
 - Windows开发:MFC/C#/MSSQL
 - Linux开发:设备驱动程序/QT应用程序
-- ARM嵌入式芯片:ARM7(LPC2292)/Cortex-M3(LPC1768/STM32)/A8(s5pv210)
+- ARM平台:ARM7(LPC2292)/Cortex-M3(LPC1768/STM32)
 - PCB绘制及作图工具:Protel/Altium Designer/AutoCAD
 - 版本管理及文档工具:Git/Markdown/MS Office
 
@@ -61,8 +60,8 @@
 
 ##开源项目
 
-- [hello_github](https://github.com/galuo/hello_github):对linux驱动的学习调试的成果。
-- [LPC1768-GPS](https://github.com/galuo/LPC1768-GPS):毕业设计的源代码以及硬件设计图。
+- [**galuo.github.io**](http://galuo.github.io/):个人主页并且不定期的更新。这个项目使用MarkdownPad作为文档编辑工具，使用Github的主页功能，git版本管理对文档实现版本管理，主要记录学习生活过程中的一些知识点和心得体会，方便交流学习。
+- [**LPC1768-GPS**](https://github.com/galuo/LPC1768-GPS):毕业设计的源代码以及硬件设计图。毕业设计是我做的比较优秀的一个项目，获得校级优秀毕业设计奖，整个项目包括下位机的硬件PCB设计及调试、软件的设计和上位机软件编写，实现了一套远程实时定位，上位机实时显示的系统。
 
 ##技术文章
 
